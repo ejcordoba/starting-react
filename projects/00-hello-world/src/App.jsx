@@ -5,32 +5,16 @@ export function App() {
   const formatUserName = (userName) => `@${userName}`;
   return (
     <section className="App">
-      <TwitterFollowCard
-        formatUserName={formatUserName}
-        isFollowing
-        userName="reddit.com"
-      >
+      <TwitterFollowCard formatUserName={formatUserName} userName="reddit.com">
         Reddit Twitter
       </TwitterFollowCard>
-      <TwitterFollowCard
-        formatUserName={formatUserName}
-        isFollowing={false}
-        userName="elonmusk"
-      >
+      <TwitterFollowCard formatUserName={formatUserName} userName="elonmusk">
         Elon Musk
       </TwitterFollowCard>
-      <TwitterFollowCard
-        formatUserName={formatUserName}
-        isFollowing
-        userName="reddit.com"
-      >
+      <TwitterFollowCard formatUserName={formatUserName} userName="reddit.com">
         Reddit Twitter
       </TwitterFollowCard>
-      <TwitterFollowCard
-        formatUserName={formatUserName}
-        isFollowing={false}
-        userName="vxnder"
-      >
+      <TwitterFollowCard formatUserName={formatUserName} userName="vxnder">
         Vanderhart
       </TwitterFollowCard>
     </section>
