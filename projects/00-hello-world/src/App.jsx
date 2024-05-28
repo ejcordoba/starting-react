@@ -9,26 +9,30 @@ export function App() {
         formatUserName={formatUserName}
         isFollowing
         userName="reddit.com"
-        name="Reddit Twitter"
-      />
+      >
+        Reddit Twitter
+      </TwitterFollowCard>
       <TwitterFollowCard
         formatUserName={formatUserName}
         isFollowing={false}
         userName="elonmusk"
-        name="Elon Musk"
-      />
+      >
+        Elon Musk
+      </TwitterFollowCard>
       <TwitterFollowCard
         formatUserName={formatUserName}
         isFollowing
         userName="reddit.com"
-        name="Reddit Twitter"
-      />
+      >
+        Reddit Twitter
+      </TwitterFollowCard>
       <TwitterFollowCard
         formatUserName={formatUserName}
         isFollowing={false}
         userName="vxnder"
-        name="Vanderhart"
-      />
+      >
+        Vanderhart
+      </TwitterFollowCard>
     </section>
   );
 }
