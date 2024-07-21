@@ -1,6 +1,29 @@
 import "./App.css";
 import { TwitterFollowCard } from "./TwitterFollowCard";
 
+const users = [
+  {
+    userName: "reddit.com",
+    name: "Reddit Twitter",
+    isFollowing: true,
+  },
+  {
+    userName: "elonmusk",
+    name: "Elon Musk",
+    isFollowing: true,
+  },
+  {
+    userName: "reddit.com",
+    name: "Reddit Twitter",
+    isFollowing: true,
+  },
+  {
+    userName: "vxnder",
+    name: "Vanderhart",
+    isFollowing: true,
+  },
+];
+
 export function App() {
   const formatUserName = (userName) => `@${userName}`;
   return (
