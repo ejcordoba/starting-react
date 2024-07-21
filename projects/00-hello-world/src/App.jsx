@@ -13,8 +13,8 @@ const users = [
     isFollowing: true,
   },
   {
-    userName: "reddit.com",
-    name: "Reddit Twitter",
+    userName: "reddit2.com",
+    name: "Reddit Twitter 2",
     isFollowing: true,
   },
   {
@@ -25,21 +25,20 @@ const users = [
 ];
 
 export function App() {
-  const formatUserName = (userName) => `@${userName}`;
   return (
     <section className="App">
-      <TwitterFollowCard formatUserName={formatUserName} userName="reddit.com">
-        Reddit Twitter
-      </TwitterFollowCard>
-      <TwitterFollowCard formatUserName={formatUserName} userName="elonmusk">
-        Elon Musk
-      </TwitterFollowCard>
-      <TwitterFollowCard formatUserName={formatUserName} userName="reddit.com">
-        Reddit Twitter
-      </TwitterFollowCard>
-      <TwitterFollowCard formatUserName={formatUserName} userName="vxnder">
-        Vanderhart
-      </TwitterFollowCard>
+      {users.map((user) => {
+        const { userName, name, isFollowing } = user;
+        return (
+          <TwitterFollowCard
+            key={userName}
+            userName={userName}
+            initialIsFollowing={isFollowing}
+          >
+            {name}
+          </TwitterFollowCard>
+        );
+      })}
     </section>
   );
 }
